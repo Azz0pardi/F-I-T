@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar"/>
+    <ImageView
+        android:layout_below="@+id/toolbar1"
+        android:scaleType="centerCrop"
+        android:id="@+id/singleFoodImg"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        app:srcCompat="@drawable/healthy" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleFoodImg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/ingredients_single"
+
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="40dp"
+    android:layout_below="@+id/textView2"
+    android:id="@+id/singleIngredients"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Ingredients_single_list"
+        android:scrollbars = "vertical"
+    />
+
+    <TextView
+        android:id="@+id/Methodtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleIngredients"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/method_single_big"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:scrollbars = "vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Methodtag"
+        android:id="@+id/actualMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actual_method"
+
+        />
+
+
+</RelativeLayout>

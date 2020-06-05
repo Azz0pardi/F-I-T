@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/Add_ingredient_menu"
+        android:title="Add Ingredient"
+        />
+
+    <item
+        android:id="@+id/Add_food_menu"
+        android:title="Add Food Recipe"
+
+        />
+
+    <item
+        android:id="@+id/Add_Exercise_menu"
+        android:title="Add Exercise"
+        />
+
+
+</menu>

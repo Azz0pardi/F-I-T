@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_AddIngredient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".frag_AddIngredient">
+
+        <TextView
+            android:id="@+id/AddIngrednewnew"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="02dp"
+            android:fontFamily="@font/oswald"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/add_ingredient_stringy"
+            android:textSize="30sp"
+            />
+        <EditText
+            android:layout_below="@+id/AddIngrednewnew"
+            android:id="@+id/userenter_IngredientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/new_ingredient_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/userenter_Protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userenter_IngredientName"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/new_ingredient_protein" />
+
+        <EditText
+            android:id="@+id/userenter_Carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userenter_Protein"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/new_ingredient_carbohydrates"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/userenter_Fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userenter_Carbs"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/new_ingredient_Fat"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/display_cals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userenter_Fat"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30px"
+            android:text="@string/calories_new_num" />
+
+        <ImageButton
+            android:id="@+id/ingredient_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/display_cals"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/addd_ing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredient_image"
+            android:layout_margin="60px"
+            android:text="Add Ingredient"
+           />
+
+
+    </RelativeLayout>
+</FrameLayout>

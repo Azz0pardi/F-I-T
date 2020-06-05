@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Home">
+
+
+    <ImageView
+        android:id="@+id/home-fit-logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/fit_logo"
+        android:contentDescription="@string/fit_logo_login"
+        android:tint="@color/colorSecondaryLight" />
+
+    <!--    <TextView-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:id="@+id/homepageTitle"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/oswald"-->
+    <!--        android:paddingTop="30dp"-->
+    <!--        android:text="@string/help_out"-->
+    <!--        android:textSize="40dp" />-->
+
+    <Button
+
+        android:id="@+id/btn_addfood"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/home-fit-logo"
+        android:layout_marginTop="20dp"
+        android:background="#789145"
+
+        android:backgroundTint="#20DDD9D9"
+
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:padding="40px"
+        android:text="@string/Btn_Addfood"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/btn_addIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/btn_addfood"
+
+        android:backgroundTint="#4DDDD9D9"
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:padding="40px"
+        android:text="@string/Btn_addIngredient"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:backgroundTint="#DDD9D9"
+        android:id="@+id/btn_addExercise"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/btn_addIngredient"
+        android:layout_centerHorizontal="true"
+        app:cornerRadius="0dp"
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:text="@string/Btn_AddExercise"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:typeface="monospace" />
+
+
+
+
+
+</RelativeLayout>
+    </ScrollView>

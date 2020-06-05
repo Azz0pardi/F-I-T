@@ -1,0 +1,21 @@
+<resources>
+<!--Doing this to be backwards compatible-->
+      <style name="AppMaterialTheme" parent="SuperMaterialTheme">
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--        Compatible with all android devices         -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+
+    </style>
+
+
+
+
+</resources>

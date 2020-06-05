@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="Excercises"
+        android:id="@+id/excercises"
+        android:icon="@drawable/run"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/recipies"
+        android:icon="@drawable/food"
+        android:title="Ingredients"
+        app:showAsAction="always" />
+    <item
+        android:title="Recipes"
+        android:id="@+id/foods"
+        android:icon="@drawable/list"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/Homepg"
+        android:checkable="false"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="always"
+        />
+
+
+</menu>

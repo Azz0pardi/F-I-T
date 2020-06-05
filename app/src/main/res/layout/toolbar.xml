@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.appbar.MaterialToolbar
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorPrimaryLight"
+    android:elevation="4dp"
+    android:fontFamily="@font/oswald"
+    android:minHeight="?attr/actionBarSize"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+<!--    android:background="?attr/colorPrimary"-->
+<!--    app:logo="@drawable/fit_logo"-->
+    <!--    android:theme="@style/ThemeOverlay.AppCompat.Light"-->

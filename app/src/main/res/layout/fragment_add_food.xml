@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_food">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".frag_AddIngredient"
+        >
+        <TextView
+            android:id="@+id/AddRecip"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="02dp"
+            android:fontFamily="@font/oswald"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/add_recipe_string"
+            android:textSize="40dp"
+            />
+
+        <EditText
+            android:layout_below="@+id/AddRecip"
+            android:id="@+id/userenter_foodname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/food_name_create"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/userenter_Ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userenter_foodname"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/ingredients_create_list" />
+
+        <EditText
+            android:id="@+id/userenter_Method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userenter_Ingredients"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/method_add_new"
+            android:inputType="textPersonName" />
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/food_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/userenter_Method"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/addd_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_image"
+            android:layout_margin="60px"
+            android:text="@string/add_food_btn"
+           />
+
+
+    </RelativeLayout>
+</FrameLayout>
